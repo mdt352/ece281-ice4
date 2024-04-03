@@ -12,8 +12,8 @@
 --|
 --| FILENAME      : stoplight_fsm_tb.vhd (TEST BENCH)
 --| AUTHOR(S)     : Maj Jeff Falkinburg, Capt Phillip Warner, Capt Dan johnson, Capt Brian Yarbrough
---|					**Your Name**
---| CREATED       : Spring 2017 Last modified 06/24/2020
+--|					**C3C Matiahn Thornton**
+--| CREATED       : Spring 2017 Last modified 03/12/2024
 --| DESCRIPTION   : This file provides a solution testbench for the stoplight entity
 --|
 --+----------------------------------------------------------------------------
@@ -97,9 +97,9 @@ begin
 	clk_proc : process
 	begin
 		w_clk <= '0';
-        wait for k_clk_period/2;
+            wait for k_clk_period/2;
 		w_clk <= '1';
-		wait for k_clk_period/2;
+		    wait for k_clk_period/2;
 	end process;
 	
 	-- Simulation process
